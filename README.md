@@ -32,7 +32,7 @@ The code includes:
 
 ---
 
-## ⚙️ Features
+## Features
 
 ### Coupled Boltzmann equations
 
