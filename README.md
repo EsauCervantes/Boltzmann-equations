@@ -26,7 +26,7 @@ The code includes:
 
 - **Freeze-in production** of \( S \) and/or $\phi$ from the SM bath
 - **Cannibalization processes** in the dark sector (e.g. \( \phi \phi \phi \leftrightarrow \phi \phi \))
-- **Mediator decay** \( \phi \to \text{SM} \) and associated entropy injection
+- **Mediator decay**  $\phi \to \text{SM}$ and associated entropy injection
 - **Hidden sector temperature evolution** \( T'(x) \)
 - Proper treatment of **Hubble expansion** and changing relativistic degrees of freedom
 
