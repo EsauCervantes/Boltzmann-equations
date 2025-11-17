@@ -37,6 +37,7 @@ The code includes:
 ### Coupled Boltzmann equations
 
 We solve a system of the form
+$$
 \begin{align}
         \frac{Y'_S}{Y_S}&=\frac{1}{x\,\tilde H}\left(\braket{C_{h\to \phi SS^*}} + \braket{C_{h\to SS^*}}+\braket{C_{\phi\phi\leftrightarrow SS^*}} +  \braket{C_{3\leftrightarrow 2}} \right)\,,\nonumber
         %
@@ -49,6 +50,7 @@ We solve a system of the form
         %
         \\-\frac{x_\phi'}{x_\phi}&=\frac{1}{x\,\tilde H}\left(\braket{C_{h\to \phi SS^*}}_2+\braket{C_{\text{SM SM}\to \text{SM}\,\phi}}_2+\braket{C_{\phi S\leftrightarrow \phi S}}_2  \right) -\frac{Y'_\phi}{Y_\phi} + \frac{H}{x\,\tilde H}\frac{\braket {p^4/E^3}}{3T_\phi} + \frac{2s'}{3s}
 \end{align}
+$$
 
 where the collision terms \( \mathcal{C}_S \) and \( \mathcal{C}_\phi \) include:
 
