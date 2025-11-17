@@ -9,7 +9,7 @@ The code is written in **Mathematica** and is designed to be fully reproducible.
 
 ---
 
-We consider two scenarios. The first one is a dark sector composed only by a singlet unstable dark matter candidate $\phi$ in cBE.wl. The second case is a dark sector composed of:
+In our work we consider two scenarios. The first one is a dark sector composed only by a singlet unstable dark matter candidate $\phi$. This one is foun in cBE.wl. The second case is a dark sector composed of:
 
 - A **dark matter particle** $S$ with self number changing reactions of the form $3\leftrightarrow 2$,
 - A **mediator** $\phi$,
@@ -24,8 +24,8 @@ where \( s \) is the SM entropy density and \( x = m_\phi / T \) is used as the 
 
 The code includes:
 
-- **Freeze-in production** of \( S \) and/or \( \phi \) from the SM bath
-- **Cannibalization processes** in the dark sector (e.g. \( \phi \phi \phi \to \phi \phi \))
+- **Freeze-in production** of \( S \) and/or $\phi$ from the SM bath
+- **Cannibalization processes** in the dark sector (e.g. \( \phi \phi \phi \leftrightarrow \phi \phi \))
 - **Mediator decay** \( \phi \to \text{SM} \) and associated entropy injection
 - **Hidden sector temperature evolution** \( T'(x) \)
 - Proper treatment of **Hubble expansion** and changing relativistic degrees of freedom
