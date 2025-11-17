@@ -9,7 +9,7 @@ The code is written in **Mathematica** and is designed to be fully reproducible.
 
 ---
 
-We consider a dark sector composed of:
+We consider two scenarios. The first one is a dark sector composed only by a singlet unstable dark matter candidate $\phi$. The second case is a dark sector composed of:
 
 - A **dark matter particle** \( S \)
 - A **mediator** \( \phi \)
