@@ -24,7 +24,7 @@ where \( s \) is the SM entropy density and \( x = m_\phi / T \) is used as the 
 
 The code includes:
 
-- **Freeze-in production** of \( S \) and/or $\phi$ from the SM bath
+- **Freeze-in production** of $S$ and/or $\phi$ from the SM bath
 - **Cannibalization processes** in the dark sector (e.g. \( \phi \phi \phi \leftrightarrow \phi \phi \))
 - **Mediator decay**  $\phi \to \text{SM}$ and associated entropy injection
 - **Hidden sector temperature evolution** \( T'(x) \)
