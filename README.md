@@ -9,8 +9,6 @@ The code is written in **Mathematica** and is designed to be fully reproducible.
 
 ---
 
-## 🔭 Physical Setup
-
 We consider a dark sector composed of:
 
 - A **dark matter particle** \( S \)
@@ -36,7 +34,7 @@ The code includes:
 
 ## ⚙️ Features
 
-### ✅ Coupled Boltzmann equations
+### Coupled Boltzmann equations
 
 We solve a system of the form
 \[
@@ -50,19 +48,19 @@ where the collision terms \( \mathcal{C}_S \) and \( \mathcal{C}_\phi \) include
 - \(2 \leftrightarrow 2\) and \(3 \leftrightarrow 2\) cannibal processes in the dark sector
 - Decays and inverse decays of \( \phi \)
 
-### ✅ Hidden sector temperature tracking
+### Hidden sector temperature tracking
 
 The solver also tracks the evolution of the **dark-sector temperature** \( T'(x) \), allowing for:
 
 - Superadiabatic cooling/heating due to cannibalization
 - Energy injection from late mediator decays
 
-### ✅ Stiff ODE handling
+### Stiff ODE handling
 
 The coupled Boltzmann equations are often **stiff**, especially in freeze-in regimes and during cannibal phases.  
 We use Mathematica’s stiffness-aware ODE solvers with controlled precision and step sizes to obtain stable solutions.
 
-### ✅ Relic abundance computation
+### Relic abundance computation
 
 From the late-time asymptotic value of \( Y_S(x) \), the code computes the dark matter relic abundance:
 \[
@@ -72,7 +70,7 @@ where \( s_0 \) is today’s entropy density and \( \rho_{\text{crit}} \) is the
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 Boltzmann-equations/
