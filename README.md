@@ -9,12 +9,12 @@ The code is written in **Mathematica** and is designed to be fully reproducible.
 
 ---
 
-We consider two scenarios. The first one is a dark sector composed only by a singlet unstable dark matter candidate $\phi$. The second case is a dark sector composed of:
+We consider two scenarios. The first one is a dark sector composed only by a singlet unstable dark matter candidate $\phi$ in cBE.wl. The second case is a dark sector composed of:
 
-- A **dark matter particle** $S$ with self number changing reactions of the form $3\leftrightarrow 2$
-- A **mediator** $\phi$
+- A **dark matter particle** $S$ with self number changing reactions of the form $3\leftrightarrow 2$,
+- A **mediator** $\phi$,
 
-The dark sector is populated via the freeze-in mechanism. The visible sector is the Standard Model (SM) thermal bath at temperature \( T \), while the dark sector can have its own temperature \( T' \).
+found in the cBE with mediator.wl file. The dark sector is populated via the freeze-in mechanism.
 
 The evolution of the system is governed by **coupled Boltzmann equations** for the comoving number densities
 \[
@@ -37,11 +37,18 @@ The code includes:
 ### Coupled Boltzmann equations
 
 We solve a system of the form
-\[
-\frac{dY_S}{dx} = \mathcal{C}_S(Y_S, Y_\phi, x),
-\qquad
-\frac{dY_\phi}{dx} = \mathcal{C}_\phi(Y_S, Y_\phi, x),
-\]
+\begin{align}\label{eq:system_med_DM}
+        \frac{Y'_S}{Y_S}&=\frac{1}{x\,\tilde H}\left(\braket{C_{h\to \phi SS^*}} + \braket{C_{h\to SS^*}}+\braket{C_{\phi\phi\leftrightarrow SS^*}} +  \braket{C_{3\leftrightarrow 2}} \right)\,,\nonumber
+        %
+        \\-\frac{x_S'}{x_S}&=
+        \begin{aligned}[t]&\frac{1}{x\,\tilde H}\big(\braket{C_{h\to \phi SS^*}}_2+\braket{C_{h\to SS^*}}_2+\braket{C_{\phi S\leftrightarrow \phi S}}_2 +  \braket{C_{3\leftrightarrow 2}}_2 \big)
+        \\&-\frac{Y'_S}{Y_S} + \frac{H}{x\,\tilde H}\frac{\braket {p^4/E^3}}{3T_S} + \frac{2s'}{3s}\,,\end{aligned}
+        %
+        \\\frac{Y'_\phi}{Y_\phi}&=\frac{1}{x\,\tilde H}\left(\braket{C_{h\to \phi SS^*}}+\braket{C_{\text{SM SM}\to \text{SM}\,\phi}}
+        +\braket{C_{\phi\phi\leftrightarrow SS^*}}\right)\,,\nonumber
+        %
+        \\-\frac{x_\phi'}{x_\phi}&=\frac{1}{x\,\tilde H}\left(\braket{C_{h\to \phi SS^*}}_2+\braket{C_{\text{SM SM}\to \text{SM}\,\phi}}_2+\braket{C_{\phi S\leftrightarrow \phi S}}_2  \right) -\frac{Y'_\phi}{Y_\phi} + \frac{H}{x\,\tilde H}\frac{\braket {p^4/E^3}}{3T_\phi} + \frac{2s'}{3s}\,.\nonumber
+\end{align}
 where the collision terms \( \mathcal{C}_S \) and \( \mathcal{C}_\phi \) include:
 
 - Freeze-in production from the SM
