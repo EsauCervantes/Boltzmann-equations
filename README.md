@@ -39,8 +39,8 @@ The code includes:
 We solve a system of ODE for the temperature and yield of both S and \(\phi\), where the collision terms \( \mathcal{C}_S \) and \( \mathcal{C}_\phi \) are included in the file collision integrals. The solver also includes:
 
 - Freeze-in production from the SM
-- \(2 \leftrightarrow 2\) and \(3 \leftrightarrow 2\) cannibal processes in the dark sector
-- Decays and inverse decays of \( \phi \)
+- $3 \leftrightarrow 2$ cannibal processes in the dark sector
+- Decays and inverse decays of $\phi$
 
 ### Hidden sector temperature tracking
 
