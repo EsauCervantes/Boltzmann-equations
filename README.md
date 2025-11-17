@@ -11,10 +11,10 @@ The code is written in **Mathematica** and is designed to be fully reproducible.
 
 We consider two scenarios. The first one is a dark sector composed only by a singlet unstable dark matter candidate $\phi$. The second case is a dark sector composed of:
 
-- A **dark matter particle** \( S \)
-- A **mediator** \( \phi \)
+- A **dark matter particle** $S$ with self number changing reactions of the form $3\leftrightarrow 2$
+- A **mediator** $\phi$
 
-interacting via number-changing and decay processes. The visible sector is the Standard Model (SM) thermal bath at temperature \( T \), while the dark sector can have its own temperature \( T' \).
+The dark sector is populated via the freeze-in mechanism. The visible sector is the Standard Model (SM) thermal bath at temperature \( T \), while the dark sector can have its own temperature \( T' \).
 
 The evolution of the system is governed by **coupled Boltzmann equations** for the comoving number densities
 \[
