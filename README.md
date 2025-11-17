@@ -37,20 +37,47 @@ The code includes:
 ### Coupled Boltzmann equations
 
 We solve a system of the form
-$$
+
+```math
 \begin{align}
-        \frac{Y'_S}{Y_S}&=\frac{1}{x\,\tilde H}\left(\braket{C_{h\to \phi SS^*}} + \braket{C_{h\to SS^*}}+\braket{C_{\phi\phi\leftrightarrow SS^*}} +  \braket{C_{3\leftrightarrow 2}} \right)\,,\nonumber
-        %
-        \\-\frac{x_S'}{x_S}&=
-        \begin{aligned}[t]&\frac{1}{x\,\tilde H}\big(\braket{C_{h\to \phi SS^*}}_2+\braket{C_{h\to SS^*}}_2+\braket{C_{\phi S\leftrightarrow \phi S}}_2 +  \braket{C_{3\leftrightarrow 2}}_2 \big)
-        \\&-\frac{Y'_S}{Y_S} + \frac{H}{x\,\tilde H}\frac{\braket {p^4/E^3}}{3T_S} + \frac{2s'}{3s}\,,\end{aligned}
-        %
-        \\\frac{Y'_\phi}{Y_\phi}&=\frac{1}{x\,\tilde H}\left(\braket{C_{h\to \phi SS^*}}+\braket{C_{\text{SM SM}\to \text{SM}\,\phi}}
-        +\braket{C_{\phi\phi\leftrightarrow SS^*}}\right)\,,\nonumber
-        %
-        \\-\frac{x_\phi'}{x_\phi}&=\frac{1}{x\,\tilde H}\left(\braket{C_{h\to \phi SS^*}}_2+\braket{C_{\text{SM SM}\to \text{SM}\,\phi}}_2+\braket{C_{\phi S\leftrightarrow \phi S}}_2  \right) -\frac{Y'_\phi}{Y_\phi} + \frac{H}{x\,\tilde H}\frac{\braket {p^4/E^3}}{3T_\phi} + \frac{2s'}{3s}
+\frac{Y'_S}{Y_S} &= \frac{1}{x\,\tilde H}
+\left(
+    \langle C_{h\to \phi SS^*} \rangle
+  + \langle C_{h\to SS^*} \rangle
+  + \langle C_{\phi\phi\leftrightarrow SS^*} \rangle
+  + \langle C_{3\leftrightarrow 2} \rangle
+\right),
+\\[6pt]
+-\frac{x_S'}{x_S} &= 
+\frac{1}{x\,\tilde H}
+\left(
+    \langle C_{h\to \phi SS^*} \rangle_2
+  + \langle C_{h\to SS^*} \rangle_2
+  + \langle C_{\phi S\leftrightarrow \phi S} \rangle_2
+  + \langle C_{3\leftrightarrow 2} \rangle_2
+\right)
+- \frac{Y'_S}{Y_S}
++ \frac{H}{x\,\tilde H} \frac{\langle p^4/E^3 \rangle}{3 T_S}
++ \frac{2 s'}{3 s},
+\\[12pt]
+\frac{Y'_\phi}{Y_\phi} &= \frac{1}{x\,\tilde H}
+\left(
+    \langle C_{h\to \phi SS^*} \rangle
+  + \langle C_{\text{SM SM}\to \text{SM}\,\phi} \rangle
+  + \langle C_{\phi\phi\leftrightarrow SS^*} \rangle
+\right),
+\\[6pt]
+-\frac{x_\phi'}{x_\phi} &= \frac{1}{x\,\tilde H}
+\left(
+    \langle C_{h\to \phi SS^*} \rangle_2
+  + \langle C_{\text{SM SM}\to \text{SM}\,\phi} \rangle_2
+  + \langle C_{\phi S\leftrightarrow \phi S} \rangle_2
+\right)
+- \frac{Y'_\phi}{Y_\phi}
++ \frac{H}{x\,\tilde H} \frac{\langle p^4/E^3 \rangle}{3 T_\phi}
++ \frac{2 s'}{3 s}.
 \end{align}
-$$
+
 
 where the collision terms \( \mathcal{C}_S \) and \( \mathcal{C}_\phi \) include:
 
