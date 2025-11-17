@@ -36,49 +36,7 @@ The code includes:
 
 ### Coupled Boltzmann equations
 
-We solve a system of the form
-
-```math
-\begin{aligned}
-\frac{Y'_S}{Y_S} &= \frac{1}{x\,\tilde H}
-\left(
-    \langle C_{h\to \phi SS^\ast} \rangle +
-    \langle C_{h\to SS^\ast} \rangle +
-    \langle C_{\phi\phi\leftrightarrow SS^\ast} \rangle +
-    \langle C_{3\leftrightarrow 2} \rangle
-\right),
-\\[8pt]
--\frac{x_S'}{x_S} &=
-\frac{1}{x\,\tilde H}
-\left(
-    \langle C_{h\to \phi SS^\ast} \rangle_2 +
-    \langle C_{h\to SS^\ast} \rangle_2 +
-    \langle C_{\phi S\leftrightarrow \phi S} \rangle_2 +
-    \langle C_{3\leftrightarrow 2} \rangle_2
-\right)
-- \frac{Y'_S}{Y_S}
-+ \frac{H}{x\,\tilde H}\frac{\langle p^4/E^3 \rangle}{3T_S}
-+ \frac{2s'}{3s},
-\\[12pt]
-\frac{Y'_\phi}{Y_\phi} &= \frac{1}{x\,\tilde H}
-\left(
-    \langle C_{h\to \phi SS^\ast} \rangle +
-    \langle C_{\text{SM SM}\to \text{SM}\,\phi} \rangle +
-    \langle C_{\phi\phi\leftrightarrow SS^\ast} \rangle
-\right),
-\\[8pt]
--\frac{x_\phi'}{x_\phi} &= \frac{1}{x\,\tilde H}
-\left(
-    \langle C_{h\to \phi SS^\ast} \rangle_2 +
-    \langle C_{\text{SM SM}\to \text{SM}\,\phi} \rangle_2 +
-    \langle C_{\phi S\leftrightarrow \phi S} \rangle_2
-\right)
-- \frac{Y'_\phi}{Y_\phi}
-+ \frac{H}{x\,\tilde H}\frac{\langle p^4/E^3 \rangle}{3T_\phi}
-+ \frac{2s'}{3s}.
-\end{aligned}
-```
-where the collision terms \( \mathcal{C}_S \) and \( \mathcal{C}_\phi \) include:
+We solve a system of ODE for the temperature and yield of both S and \(\phi\), where the collision terms \( \mathcal{C}_S \) and \( \mathcal{C}_\phi \) are included in the file collision integrals. The solver also includes:
 
 - Freeze-in production from the SM
 - \(2 \leftrightarrow 2\) and \(3 \leftrightarrow 2\) cannibal processes in the dark sector
