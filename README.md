@@ -17,7 +17,7 @@ In our work we consider two scenarios: a dark sector composed only by a singlet 
 found in the cBE with mediator.wl file. The code contains production from Higgs annihilation/decay as well as production from electroweak gauge bosons. For details see the paper.
 The code includes:
 
-- **Freeze-in production** of $S$ and/or $\phi$ from the SM bath
+- **Freeze-in production** of $S$ and/or $\phi$ from the SM bath (Higgs Portal)
 - **Cannibalization processes** in the dark sector ($\phi \phi \phi \leftrightarrow \phi \phi $)
 - **Hidden sector temperature evolution and yield**
 
