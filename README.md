@@ -18,7 +18,7 @@ found in the cBE with mediator.wl file. The code contains production from Higgs 
 The code includes:
 
 - **Freeze-in production** of $S$ and/or $\phi$ from the SM bath
-- **Cannibalization processes** in the dark sector (e.g. $phi \phi \phi \leftrightarrow \phi \phi $)
+- **Cannibalization processes** in the dark sector ($\phi \phi \phi \leftrightarrow \phi \phi $)
 - **Hidden sector temperature evolution and yield**
 
 ---
