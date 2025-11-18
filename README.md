@@ -43,11 +43,7 @@ We use Mathematica’s ODE solvers with controlled precision and step sizes to o
 
 ### Relic abundance computation
 
-From the late-time asymptotic value of Y, the code computes the dark matter relic abundance:
-$$
-\Omega_S h^2 = \frac{m_S\, s_0\, Y_S(x \to \infty)}{\rho_{\text{crit}}},
-$$
-where $s_0$ is today’s entropy density and $\rho_{\text{crit}}$ is the critical density.
+From the late-time asymptotic value of Y, the code computes the dark matter relic abundance: $\Omega_S h^2 = \frac{m_S\, s_0\, Y_S(x \to \infty)}{\rho_{\text{crit}}}$ where $s_0$ is today’s entropy density and $\rho_{\text{crit}}$ is the critical density.
 
 ---
 
