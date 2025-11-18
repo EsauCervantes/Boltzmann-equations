@@ -9,12 +9,12 @@ The code is written in **Mathematica** and is designed to be fully reproducible.
 
 ---
 
-In our work we consider two scenarios. The first one is a dark sector composed only by a singlet unstable dark matter candidate $\phi$. This one is foun in cBE.wl. The second case is a dark sector composed of:
+In our work we consider two scenarios: a dark sector composed only by a singlet unstable dark matter candidate $\phi$ (cBE.wl) and a dark sector composed of:
 
 - A **dark matter particle** $S$ with self number changing reactions of the form $3\leftrightarrow 2$,
 - A **mediator** $\phi$,
 
-found in the cBE with mediator.wl file. The code contains production from Higgs annihilation/decay as well as production from electroweak gauge bosons. For details of the evolution of the system is governed by **coupled Boltzmann equations** for the comoving number densities see the paper. The output is given in terms of $x_{DM}$ and $Y$.
+found in the cBE with mediator.wl file. The code contains production from Higgs annihilation/decay as well as production from electroweak gauge bosons. For details see the paper. The output is given in terms of $x_{DM}$ and $Y$.
 The code includes:
 
 - **Freeze-in production** of $S$ and/or $\phi$ from the SM bath
