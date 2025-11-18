@@ -1,6 +1,6 @@
 # Boltzmann Equation Solver for Cannibal Dark Sectors
 
-This repository contains a **numerical solver for coupled Boltzmann equations** arising in cannibal dark sector models, as studied in
+This repository contains a **numerical solver for coupled Boltzmann equations** arising in cannibal dark sector models produced via the freeze-in mechanism, as studied in
 
 > **E. Cervantes**, *Freezing-in cannibal dark sectors* (2024).  
 > [arXiv:2407.12104](https://arxiv.org/abs/2407.12104)
@@ -14,14 +14,7 @@ In our work we consider two scenarios. The first one is a dark sector composed o
 - A **dark matter particle** $S$ with self number changing reactions of the form $3\leftrightarrow 2$,
 - A **mediator** $\phi$,
 
-found in the cBE with mediator.wl file. The dark sector is populated via the freeze-in mechanism.
-
-The evolution of the system is governed by **coupled Boltzmann equations** for the comoving number densities
-\[
-Y_S = \frac{n_S}{s}, \qquad Y_\phi = \frac{n_\phi}{s},
-\]
-where \( s \) is the SM entropy density and \( x = m_\phi / T \) is used as the time variable.
-
+found in the cBE with mediator.wl file. The code contains production from Higgs annihilation/decay as well as production from electroweak gauge bosons. For details of the evolution of the system is governed by **coupled Boltzmann equations** for the comoving number densities see the paper. The output is given in terms of $x_{DM}$ and $Y$.
 The code includes:
 
 - **Freeze-in production** of $S$ and/or $\phi$ from the SM bath
