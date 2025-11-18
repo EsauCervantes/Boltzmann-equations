@@ -39,11 +39,7 @@ The solver tracks the evolution of the **dark-sector temperature** $T'$, allowin
 ### Stiff ODE handling
 
 The coupled Boltzmann equations are often **stiff** during cannibal phases.  
-We use Mathematica’s ODE solvers with controlled precision and step sizes to obtain stable solutions.
-
-### Relic abundance computation
-
-From the late-time asymptotic value of Y, the code computes the dark matter relic abundance: $\Omega_S h^2 = \frac{m_S\, s_0\, Y_S(x \to \infty)}{\rho_{\text{crit}}}$ where $s_0$ is today’s entropy density and $\rho_{\text{crit}}$ is the critical density.
+We use Mathematica’s ODE solvers with controlled precision and step sizes to obtain stable solutions. From the late-time asymptotic value of Y, the code computes the dark matter relic abundance
 
 ---
 
